@@ -28,15 +28,12 @@
             String senha = request.getParameter("senha");
             String cpf = request.getParameter("cpf");
             String Email = request.getParameter("email");
-                if(nome == "j" || senha == "j"){
-                    out.print("INVALIDO");
-                   
-                }else{
+                
             out.print("Nome: " +nome+ "<br>");
             out.print("Senha: " +senha+ "<br>");
             out.print("CPF: " + cpf +"<br>");
             out.print("E-mail: " + cpf +"<br>");
-        }
+        
 %> 
        </div> 
     </body>

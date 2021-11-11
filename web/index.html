@@ -12,27 +12,50 @@
      <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="jquery-3.6.0.min.js.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-        <header class="container-fluid" style="background-color: blueviolet; padding: 10px" >
-        <h1 class="text-center">Banco</h1>
+        <header class="container-fluid" style="background-color: blueviolet; padding: 10px; width: 100%" >
+        <h1 class="text-center" style>Banco</h1>
         </header>
   </head>
+  <style>
+      body{
+         background-image: url("img/bank1.jpg");
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+          background-size: 1920px 1080px;
+      }
+      p{
+          font-size: 20px;
+      }
+      h1{
+          text-align: center;
+      }
+      h5{
+          font-size: 40px;
+          
+      }
+      a{
+          margin-top: 30px;
+          size: 10px;
+      }
+  </style>
   <body>
-	<div class="container">
-	
-	<!-- Conteúdo aqui -->
-     <h1>Olá</h1>
-     <p></p>
-     <a href="home.jsp" style="color: black">Clicque aqui para se cadastrar</a>
-     
-	</div>
+  <center><div class="card text-center" style="width: 30rem; height: 30rem;  margin-top: 5%;  border: 10px solid blueviolet;">
+  <div class="card-body" style="padding: 25%;">
+      <h5 class="card-title" style="margin-top: -30px; margin-bottom: 40px; padding-bottom: 10%">Bem-vindo ao Banco!</h5>
+    <p class="card-text">Com os botões abaixo você pode fazer o login ou se cadastrar</p>
+    <a href="login.jsp" class="btn btn-primary" >Login</a>
+    <a href="cadastro.jsp" class="btn btn-primary" style="margin-left: 20px" >Cadastro</a>
+  </div></center>
+
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="jquery-3.6.0.min.js.js"></script>
     
     <script>
+        
         $("p").click(function(){
             alert("click")
-        })
+        });
     </script>
     
   </body>

@@ -23,7 +23,7 @@
     <body>
                  
         <div class='container pt-3'>
-            <h1>cadastro/login</h1>
+            <h1>Cadastro</h1>
             <form  name= "form1" method="post" action="usuario.jsp" onsubmit="required()">
                 <div class="form-group" >
                 Nome:<br>
@@ -34,8 +34,11 @@
                 <input type="text" name ='cpf' class="form-control" onkeypress="$(this).mask('000.000.000-00');" ><br>
                 E-MAIL:
                 <input type="email" name='email' class='form-control' ><br>
-                <input id="btn" type='submit' class='btn btn-success' value='Cadastrar'>
-                <p id='p' style="font-size: 20px; padding: 3%;  "class="text-danger" ></p>
+                <input id="btn" type='submit' class='btn btn-success' value='Cadastrar' >
+                <p id='p' style="font-size: 20px; margin-top: 15px;  "class="text-danger" ></p>
+                <p id='p1' style="font-size: 20px; padding: ;  "class="text-danger" ></p>
+                <p id='p2' style="font-size: 20px; padding: ;  "class="text-danger" ></p>
+                <p id='p3' style="font-size: 20px; padding: ;  "class="text-danger" ></p>
                 </div>
             </form>
           
@@ -45,39 +48,36 @@
           document.getElementById("btn").addEventListener("click", function(event){
             let empt = document.forms["form1"]["nome"].value;
             if (empt === ""){
-              p.innerHTML += "Nome não identificado <br><br>";
-            event.preventDefault()};              
+              p.innerHTML = "Nome não identificado <br><br>";
+              
+            event.preventDefault()}
+                    else{
+                    p.innerHTML = "";
+                };                      
                          
             let empt1 = document.forms["form1"]["senha"].value;
             if (empt1 === ""){              
-            p.innerHTML += "Senha não identificada <br><br>";
-            event.preventDefault()};
+                p1.innerHTML = "Senha não identificada <br><br>";
+            event.preventDefault()}else{
+                    p1.innerHTML ="";
+                 };
          
            let empt2 = document.forms["form1"]["cpf"].value;
             if (empt2 === ""){              
-            p.innerHTML += "CPF não identificado <br><br>";
-            event.preventDefault()};
+                p2.innerHTML = "CPF não identificado <br><br>";
+            event.preventDefault()}else{
+                p2.innerHTML="";
+            };
         
-            let empt3 = document.forms["form1"]["cpf"].value;
+            let empt3 = document.forms["form1"]["email"].value;
             if (empt3 === ""){              
-            p.innerHTML += "E-mail não identificado <br><br>";
-            event.preventDefault()};
+                p3.innerHTML = "E-mail não identificado <br><br>";
+            event.preventDefault()}else{
+                p3.innerHTML="";
+            };
           });
           
-          document.getElementById("btn").addEventListener("click", function(){
-              let empt = document.forms["form1"]["nome"].value;
-              let empt1 = document.forms["form1"]["senha"].value;
-              let empt2 = document.forms["form1"]["cpf"].value;
-              let empt3 = document.forms["form1"]["cpf"].value;
-              if (empt !== "" || empt1 !== ""|| empt2 !== ""|| empt3 !== ""){
-              p.innerHTML="";
-            }
-            });
-          
-        
-        
-        
-    </script>
+         </script>
 
     </body>
 </html>
