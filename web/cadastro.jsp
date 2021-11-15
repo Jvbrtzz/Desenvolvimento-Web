@@ -24,7 +24,7 @@
                  
         <div class='container pt-3'>
             <h1>Cadastro</h1>
-            <form  name= "form1" method="post" action="usuario.jsp" onsubmit="required()">
+            <form  name= "form1" method="post" action="paginaUser.jsp" onsubmit="required()">
                 <div class="form-group" >
                 Nome:<br>
                 <input type='text' name='nome' class='form-control' ><br>

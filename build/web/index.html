@@ -12,16 +12,26 @@
      <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="jquery-3.6.0.min.js.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        
         <header class="container-fluid" style="background-color: blueviolet; padding: 10px; width: 100%" >
         <h1 class="text-center" style>Banco</h1>
         </header>
+         <h2 id="menu" onmouseover="aparecer()" >menu</h2>
+        <div id="drop" class="drophide" onmouseleave="desaparecer()">
+            <ul>
+                <a href="categorias.jsp" style="text-decoration:none;"><li>Categorias</li></a>                   
+                <a href="usuario.jsp" style="text-decoration:none;"><li>Usuários</li></a>  
+                <a href="contas.jsp" style="text-decoration:none;"><li>Contas</li></a>  
+                <a href="lancamentos.jsp" style="text-decoration:none;"><li>Lançamento</li></a>  
+            </ul>
+         </div>      
   </head>
   <style>
       body{
          background-image: url("img/bank1.jpg");
          background-repeat: no-repeat;
          background-attachment: fixed;
-          background-size: 1920px 1080px;
+         background-size: 1920px 1080px;
       }
       p{
           font-size: 20px;
@@ -36,10 +46,54 @@
       a{
           margin-top: 30px;
           size: 10px;
+          
+          color: white;
       }
+      #menu{
+        margin-top: -75px;
+        margin-left: 5%;
+        text-align: left;
+        color: white;
+        transition: all ease 0.3s;    
+        width: 8%;
+        cursor: pointer;
+        }
+    #menu:hover{
+        color: black;
+
+    }
+    #drop{
+        margin-bottom: 100px;
+        width: 180px;
+        background-color: blueviolet;
+        margin-left: 10px;
+
+
+    }
+    ul{ 
+        position: relative;
+        list-style: none;
+        border: 1px solid black;
+        color: white;
+
+
+    }
+    li{
+        background-color: blueviolet;
+        padding: 5%;
+        height: 40px;    
+        border-collapse: collapse;
+        transition: all ease 0.3s;
+    }
+    li:hover{
+        color: black;
+    }
+    .drophide{
+        display: none;
+}
   </style>
   <body>
-  <center><div class="card text-center" style="width: 30rem; height: 30rem;  margin-top: 5%;  border: 10px solid blueviolet;">
+  <center><div class="card text-center" style="width: 30rem; height: 30rem; margin-top: 5%;  border: 10px solid blueviolet;">
   <div class="card-body" style="padding: 25%;">
       <h5 class="card-title" style="margin-top: -30px; margin-bottom: 40px; padding-bottom: 10%">Bem-vindo ao Banco!</h5>
     <p class="card-text">Com os botões abaixo você pode fazer o login ou se cadastrar</p>
@@ -52,6 +106,18 @@
     <script src="jquery-3.6.0.min.js.js"></script>
     
     <script>
+        function desaparecer(){
+        var menu = document.getElementById('menu')
+        var drop = document.getElementById('drop')
+        drop.classList.add('drophide')
+      
+}
+    function aparecer(){
+        var menu = document.getElementById('menu')
+        var drop = document.getElementById('drop')
+
+        drop.classList.remove('drophide')
+    }   
         
         $("p").click(function(){
             alert("click")
