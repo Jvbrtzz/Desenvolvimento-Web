@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <!-- Meta tags ObrigatÃ³rias -->
+    <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -16,11 +16,11 @@
         <header class="container-fluid" style="background-color: blueviolet; padding: 10px; width: 100%" >
         <h1 class="text-center" style>Banco</h1>
         </header>
-         
-  </head>
+         </div>      
+    </head>
   <style>
       body{
-         background-image: url("img/bank1.jpg");
+         background-color: black;
          background-repeat: no-repeat;
          background-attachment: fixed;
          background-size: 1920px 1080px;
@@ -41,16 +41,29 @@
           
           color: white;
       }
+      #menu{
+        margin-top: -75px;
+        margin-left: 5%;
+        text-align: left;
+        color: white;
+        transition: all ease 0.3s;    
+        width: 8%;
+        cursor: pointer;
+        }
     
+
+ 
+
   </style>
   <body>
-  <center><div class="card text-center" style="width: 30rem; height: 35rem; margin-top: 5%;  border: 10px solid blueviolet;">
+  <center><div class="card text-center" style="width: 30rem; height: 35rem; margin-top: 5%;  border: 10px solid black; border-radius: 20px;">
   <div class="card-body" style="padding: 25%;">
-      <h5 class="card-title" style="margin-top: -30px; margin-bottom: 40px; padding-bottom: 10%">Bem-vindo ao Banco!</h5>
-    <p class="card-text">Com os botÃµes abaixo vocÃª pode fazer o login ou se cadastrar</p>
-    <a href="login.jsp" class="btn btn-primary" >Login</a>
-    <a href="cadastro.jsp" class="btn btn-primary" style="margin-left: 20px" >Cadastro</a>
-    <a href="loginAdm.jsp" class="btn btn-primary" >Login Administrador</a>
+      <h5 class="card-title" style="font-size: 30px; margin-top: -30px; margin-bottom: 40px; padding-bottom: 10%">Área do Administrador</h5>
+    <p class="card-text">Lista de Ações</p>
+   
+    <a href="contas.jsp" class="btn btn-primary" style="margin-left: 10px" >Cadastro Usuário</a>
+    <a href="cadastroAdmin.jsp" class="btn btn-primary" style="margin-left: 10px" >Cadastro Administradores</a>
+    <a href="categorias.jsp" class="btn btn-primary" style="margin-left: 10px" >Cadastrar Categoria</a>
   </div></center>
 
     <!-- JavaScript (Opcional) -->
@@ -71,7 +84,9 @@
         drop.classList.remove('drophide')
     }   
         
-       ;
+        $("p").click(function(){
+            alert("click")
+        });
     </script>
     
   </body>

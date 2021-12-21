@@ -18,14 +18,14 @@
         <body>
         <div class='container pt-3'>
             <h1>Contas</h1>
-            <form  name= "form1" method="post">
+            <form  name= "form1" method="post" action="CadastroUsuario">
                 <div class="form-group" >
                 Id:<br>
                 <input type='text' name='id' class='form-control' ><br>
                 Id usuário:<br>
                 <input type='text' name='id_usuario' class='form-control' ><br>
                 Nome conta:<br>
-                <input type='text' name='nome-conta' class='form-control' ><br>
+                <input type='text' name='nome_conta' class='form-control' ><br>
                 Banco:<br>
                 <input type='number' name='banco' class='form-control' onkeypress="$(this).mask('000');" ><br>
                 Agencia:<br>

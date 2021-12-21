@@ -24,7 +24,7 @@
                  
         <div class='container pt-3'>
             <h1>Cadastro</h1>
-            <form  name= "form1" method="post" action="paginaUser.jsp" onsubmit="required()">
+            <form  name= "form1" method="POST" action="" onsubmit="required()">
                 <div class="form-group" >
                 Nome:<br>
                 <input type='text' name='nome' class='form-control' ><br>
@@ -41,7 +41,11 @@
                 <p id='p3' style="font-size: 20px; padding: ;  "class="text-danger" ></p>
                 </div>
             </form>
-          
+            <%
+                
+               
+    
+            %>
         </div>
         <script>
            

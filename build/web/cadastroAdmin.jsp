@@ -23,8 +23,8 @@
     <body>
                  
         <div class='container pt-3'>
-            <h1>Cadastro</h1>
-            <form  name= "form1" method="POST" action="" onsubmit="required()">
+            <h1>Cadastro Administrador</h1>
+            <form  name= "form1" method="POST" action="CadastroAdmin" onsubmit="required()">
                 <div class="form-group" >
                 Nome:<br>
                 <input type='text' name='nome' class='form-control' ><br>

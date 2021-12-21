@@ -24,18 +24,22 @@
     <body>
         <div class='container pt-3'>
             <h1>Login</h1>
-            <form  name= "form1" method="post" action="usuario.jsp" onsubmit="required()">
+            <form  name= "form1" method="post" action="" onsubmit="required()">
                 <div class="form-group" >
                 Nome:<br>
-                <input type='text' name='nome' class='form-control' ><br>
+                <input type='text' name='nome' id="nome" class='form-control' ><br>
                 Senha:<br>
-                <input type="password" class='form-control' name="senha"><br>
+                <input type="password" class='form-control' id="senha" name="senha"><br>
                 
-                <input id="btn" type='submit' class='btn btn-success' value='Cadastrar' >
+                <input id="btn" type='submit' class='btn btn-success' value='Entrar' >
                 <p id='p' style="font-size: 20px; margin-top: 15px;  "class="text-danger" ></p>
                 <p id='p1' style="font-size: 20px; padding: ;  "class="text-danger" ></p>
                 
                 </div>
             </form>
+            <script>
+                                
+         
+            </script> 
     </body>
 </html>

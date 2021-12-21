@@ -1,10 +1,6 @@
-<%-- 
-    Document   : login
-    Created on : 11/11/2021, 15:53:42
-    Author     : jvbor
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8" import="java.util.*"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -23,8 +19,8 @@
     </head>
     <body>
         <div class='container pt-3'>
-            <h1>Login</h1>
-            <form  name= "form1" method="post" action="" onsubmit="required()">
+            <h1>Login Adm</h1>
+            <form  name= "form1" method="post" action="AreaPrivada" onsubmit="required()">
                 <div class="form-group" >
                 Nome:<br>
                 <input type='text' name='nome' id="nome" class='form-control' ><br>
@@ -39,7 +35,17 @@
             </form>
             <script>
                                 
-         
+                document.getElementById("btn").addEventListener("click", function(e) {
+                let empt = document.forms["form1"]["nome"].value;      
+                let empt1 = document.forms["form1"]["senha"].value;
+                let p1 = document.getElementById("p1");
+                    if (empt !== 'admin' || empt1 !== 'admin'){
+                        p1.innerHTML = "ÁREA RESTRITA AO ADMINISTRADOR<br><br>";         
+                    e.preventDefault();
+                    
+                }
+            });
             </script> 
+            
     </body>
 </html>
