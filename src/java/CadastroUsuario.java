@@ -64,23 +64,22 @@ public class CadastroUsuario extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             try (PrintWriter out = response.getWriter()) {
-            String id  = request.getParameter("id");
-            String id_usuario = request.getParameter("id_usuario");
-            String nome_conta = request.getParameter("nome_conta");
-            String banco = request.getParameter("banco");
-            String agencia = request.getParameter("agencia");
-            String conta_corrente = request.getParameter("conta_corrente");
             
-            if (id.isEmpty() || id_usuario.isEmpty() || nome_conta.isEmpty() || banco.isEmpty()|| agencia.isEmpty()|| conta_corrente.isEmpty()){
+            String nome = request.getParameter("nome");
+            String cpf = request.getParameter("cpf");
+            String email = request.getParameter("email");
+            String suspenso = request.getParameter("suspenso");
+            
+            if (nome.isEmpty() || cpf.isEmpty() || email.isEmpty()|| suspenso.isEmpty()){
                 response.sendRedirect("contas.jsp");
              }else{
                 Pessoa user = new Pessoa();
-                user.setId(id);
-                user.setSenha(id_usuario);
-                user.setCpf(nome_conta);
-                user.setEmail(banco);
-                user.setEmail(agencia);
-                user.setEmail(conta_corrente);
+                
+                user.setNome(nome);
+                user.setCpf(cpf);
+                user.setEmail(email);
+                user.setSuspenso(suspenso);
+                
                 
                 request.setAttribute("pessoa", user);
                 }

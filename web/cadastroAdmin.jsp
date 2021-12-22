@@ -24,7 +24,7 @@
                  
         <div class='container pt-3'>
             <h1>Cadastro Administrador</h1>
-            <form  name= "form1" method="POST" action="CadastroAdmin" onsubmit="required()">
+            <form  name= "form1" method="POST" action="paginaDeCadastradosAdmin.jsp" onsubmit="required()">
                 <div class="form-group" >
                 Nome:<br>
                 <input type='text' name='nome' class='form-control' ><br>
@@ -32,8 +32,7 @@
                 <input type="password" class='form-control' name="senha"><br>
                 CPF:<br>
                 <input type="text" name ='cpf' class="form-control" onkeypress="$(this).mask('000.000.000-00');" ><br>
-                E-MAIL:
-                <input type="email" name='email' class='form-control' ><br>
+              
                 <input id="btn" type='submit' class='btn btn-success' value='Cadastrar' >
                 <p id='p' style="font-size: 20px; margin-top: 15px;  "class="text-danger" ></p>
                 <p id='p1' style="font-size: 20px; padding: ;  "class="text-danger" ></p>
@@ -73,12 +72,8 @@
                 p2.innerHTML="";
             };
         
-            let empt3 = document.forms["form1"]["email"].value;
-            if (empt3 === ""){              
-                p3.innerHTML = "E-mail não identificado <br><br>";
-            event.preventDefault()}else{
-                p3.innerHTML="";
-            };
+           
+            
           });
           
          </script>

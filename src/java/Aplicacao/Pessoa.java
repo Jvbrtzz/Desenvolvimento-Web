@@ -101,5 +101,14 @@ public class Pessoa {
     private String senha;
     private String cpf;
     private String email;
+
+    public String getSuspenso() {
+        return suspenso;
+    }
+
+    public void setSuspenso(String suspenso) {
+        this.suspenso = suspenso;
+    }
+    private String suspenso;
     
 }

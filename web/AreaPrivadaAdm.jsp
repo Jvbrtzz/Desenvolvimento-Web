@@ -61,7 +61,7 @@
       <h5 class="card-title" style="font-size: 30px; margin-top: -30px; margin-bottom: 40px; padding-bottom: 10%">Área do Administrador</h5>
     <p class="card-text">Lista de Ações</p>
    
-    <a href="contas.jsp" class="btn btn-primary" style="margin-left: 10px" >Cadastro Usuário</a>
+    <a href="usuario.jsp" class="btn btn-primary" style="margin-left: 10px" >Cadastro Usuário</a>
     <a href="cadastroAdmin.jsp" class="btn btn-primary" style="margin-left: 10px" >Cadastro Administradores</a>
     <a href="categorias.jsp" class="btn btn-primary" style="margin-left: 10px" >Cadastrar Categoria</a>
   </div></center>
@@ -83,10 +83,7 @@
 
         drop.classList.remove('drophide')
     }   
-        
-        $("p").click(function(){
-            alert("click")
-        });
+       
     </script>
     
   </body>
