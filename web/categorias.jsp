@@ -22,15 +22,14 @@
         <body>
         <div class='container pt-3'>
             <h1>Categorias</h1>
-            <form  name= "form1" method="post">
+            <form  name= "form1" method="post" action="paginaDeCadastrosCategoria.jsp">
                 <div class="form-group" >
-                Id:<br>
-                <input type='text' name='id' class='form-control' ><br>
+                
                 Descrição:<br>
                 <input type="text" class='form-control' name="descricao"><br>
                 
                 <input id="btn" type='submit' class='btn btn-success' value='Cadastrar' >
-                
+                <a href="paginaDeCadastrosCategoria.jsp"><input   class='btn btn-success' value='Ver lista' ></a>
                 <p id='p' style="font-size: 20px; margin-top: 15px;  "class="text-danger" ></p>
                 <p id='p1' style="font-size: 20px; padding: ;  "class="text-danger" ></p>
                 

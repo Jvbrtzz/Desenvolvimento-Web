@@ -44,11 +44,11 @@
                       <option value="N">Não Suspenso</option>                      
                     </select><br><br>    
                 <input id="btn" type='submit' class='btn btn-success' value='Cadastrar' >
+                <a href="paginaDeCadastrosUsuarios.jsp"><input   class='btn btn-success' value='Ver lista' ></a>
                 <p id='p4' style="font-size: 20px; margin-top: 15px;  "class="text-danger" ></p>
                 <p id='p' style="font-size: 20px; margin-top: 15px;  "class="text-danger" ></p>
-                <p id='p1' style="font-size: 20px; padding: ;  "class="text-danger" ></p>
                 <p id='p2' style="font-size: 20px; padding: ;  "class="text-danger" ></p>
-                <p id='p3' style="font-size: 20px; padding: ;  "class="text-danger" ></p>
+                
                 </div>
             </form>
           

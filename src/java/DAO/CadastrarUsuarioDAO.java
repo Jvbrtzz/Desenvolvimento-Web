@@ -66,4 +66,24 @@ public class CadastrarUsuarioDAO {
         }
         return lista;
     }
+    public void Excluir(Pessoa objPessoa) throws ClassNotFoundException{
+        
+        String sql = "insert into usuarios (nome, cpf, senha, suspenso) values (?,?,?,?)";
+        con = new ConexaoDAO().conexaoDAO();
+        
+        try{
+            pstm = (PreparedStatement) con.prepareStatement(sql);
+            pstm.setString(1, objPessoa.getNome());
+            pstm.setString(2, objPessoa.getCpf());
+            pstm.setString(3, objPessoa.getSenha());
+            pstm.setString(4, objPessoa.getSuspenso());
+            
+            pstm.execute();
+            pstm.close();
+            
+        }catch(SQLException e){
+            
+        }
+    }
+
 }
