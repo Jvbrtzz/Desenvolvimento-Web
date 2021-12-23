@@ -63,18 +63,6 @@ public class AreaPrivada extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            
-            String nome = request.getParameter("nome");
-            String senha = request.getParameter("senha");
-                if (nome.isEmpty() && senha.isEmpty()){
-                    RequestDispatcher rd = request.getRequestDispatcher("loginAdm.jsp");
-                    rd.forward(request, response);
-             }else{
-                request.setAttribute("nomeRecebido", nome);
-                request.setAttribute("senhaRecebida", senha);
-                RequestDispatcher rd = request.getRequestDispatcher("/AreaPrivadaAdm.jsp");
-                rd.forward(request, response);
-                }
         
     }
 

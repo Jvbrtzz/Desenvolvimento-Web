@@ -68,15 +68,12 @@ public class CadastrarUsuarioDAO {
     }
     public void Excluir(Pessoa objPessoa) throws ClassNotFoundException{
         
-        String sql = "insert into usuarios (nome, cpf, senha, suspenso) values (?,?,?,?)";
+        String sql = "delete from usuarios where id = ?";
         con = new ConexaoDAO().conexaoDAO();
         
         try{
             pstm = (PreparedStatement) con.prepareStatement(sql);
-            pstm.setString(1, objPessoa.getNome());
-            pstm.setString(2, objPessoa.getCpf());
-            pstm.setString(3, objPessoa.getSenha());
-            pstm.setString(4, objPessoa.getSuspenso());
+            pstm.setString(1, objPessoa.getId());
             
             pstm.execute();
             pstm.close();
@@ -85,5 +82,22 @@ public class CadastrarUsuarioDAO {
             
         }
     }
-
+   public ResultSet autenticar(Pessoa objPessoa) throws ClassNotFoundException{
+        
+        String sql = "select * usuarios where nome = ? and senha = ?";
+        con = new ConexaoDAO().conexaoDAO();
+        
+        try{
+            pstm = (PreparedStatement) con.prepareStatement(sql);
+            pstm.setString(1, objPessoa.getNome());
+            pstm.setString(2, objPessoa.getSenha());
+            
+            ResultSet rs = pstm.executeQuery();
+            return rs;
+        }catch(SQLException e){
+            
+     }
+        return rs;
+    
+    }
 }

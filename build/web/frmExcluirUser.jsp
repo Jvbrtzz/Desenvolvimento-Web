@@ -9,11 +9,23 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <meta charset="utf-8">
+         
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="jquery-3.6.0.min.js.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        <title>Usuário excluir</title>
+    <header class="container-fluid" style="background-color: blueviolet; padding: 10px" >
+        <h1 class="text-center">Banco</h1>
+    </header>
+        
     </head>
     <body>
-       <h1>Usuário</h1>
-            <form  name= "form1" method="post" action="frmExcluirUser.jsp" onsubmit="required()">
+       <center><h1 style="padding-top: 20px">EXCLUIR USUARIO</h1></center>
+            <form  name= "form1" method="post" action="ExcluirUser.jsp" onsubmit="required()">
                 <div class="form-group" >
                 
                 ID:<br>
@@ -30,7 +42,7 @@
                       <option value="S">Suspenso</option>
                       <option value="N">Não Suspenso</option>                      
                     </select><br><br>
-                    <button type="submit">Excluir</button>
+                    <center><button class="btn btn-danger" type="submit">Excluir</button></center>
             </form>        
     </body>
 </html>

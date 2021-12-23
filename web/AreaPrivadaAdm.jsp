@@ -1,3 +1,7 @@
+<%@page import="Aplicacao.Pessoa"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="DAO.CadastrarAdmDAO"%>
+<%@page import="DAO.CadastrarUsuarioDAO"%>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -56,6 +60,30 @@
 
   </style>
   <body>
+        <%
+          try {
+                Pessoa pessoa = new Pessoa();
+                String nome = request.getParameter("nome");
+                String senha = request.getParameter("senha");
+                pessoa.setNome(nome);
+                pessoa.setSenha(senha);
+                
+                CadastrarAdmDAO objPessoa = new CadastrarAdmDAO();
+                ResultSet rsAdm = objPessoa.autenticar(pessoa) ;
+                
+                if(rsAdm.next()){
+                    RequestDispatcher rd = request.getRequestDispatcher("AreaPrivadaAdm.jsp");
+                    rd.forward(request, response);
+                }else{
+                    RequestDispatcher rd = request.getRequestDispatcher("erro.jsp");
+                    rd.forward(request, response);
+                };
+                
+              } catch (Exception e) {
+              }
+          
+      
+      %>
   <center><div class="card text-center" style="width: 30rem; height: 35rem; margin-top: 5%;  border: 10px solid black; border-radius: 20px;">
   <div class="card-body" style="padding: 25%;">
       <h5 class="card-title" style="font-size: 30px; margin-top: -30px; margin-bottom: 40px; padding-bottom: 10%">Área do Administrador</h5>

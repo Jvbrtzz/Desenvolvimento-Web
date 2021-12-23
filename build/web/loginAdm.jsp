@@ -1,5 +1,9 @@
 
 
+<%@page import="Aplicacao.Pessoa"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="DAO.CadastrarAdmDAO"%>
+<%@page import="DAO.CadastrarAdmDAO"%>
 <%@page contentType="text/html" pageEncoding="UTF-8" import="java.util.*"%>
 <!DOCTYPE html>
 <html>
@@ -19,8 +23,8 @@
     </head>
     <body>
         <div class='container pt-3'>
-            <h1>Login Adm</h1>
-            <form  name= "form1" method="post" action="AreaPrivada" onsubmit="required()">
+            <h1>Login Administrador</h1>
+            <form  name= "form1" method="post" action="AreaPrivadaAdm.jsp" onsubmit="required()">
                 <div class="form-group" >
                 Nome:<br>
                 <input type='text' name='nome' id="nome" class='form-control' ><br>
@@ -28,24 +32,14 @@
                 <input type="password" class='form-control' id="senha" name="senha"><br>
                 
                 <input id="btn" type='submit' class='btn btn-success' value='Entrar' >
+                 <a href="index.html" class="btn btn-primary">Voltar Pagina inicial</a>
+
                 <p id='p' style="font-size: 20px; margin-top: 15px;  "class="text-danger" ></p>
                 <p id='p1' style="font-size: 20px; padding: ;  "class="text-danger" ></p>
                 
                 </div>
             </form>
-            <script>
-                                
-                document.getElementById("btn").addEventListener("click", function(e) {
-                let empt = document.forms["form1"]["nome"].value;      
-                let empt1 = document.forms["form1"]["senha"].value;
-                let p1 = document.getElementById("p1");
-                    if (empt !== 'admin' || empt1 !== 'admin'){
-                        p1.innerHTML = "ÁREA RESTRITA AO ADMINISTRADOR<br><br>";         
-                    e.preventDefault();
-                    
-                }
-            });
-            </script> 
+         
             
     </body>
 </html>

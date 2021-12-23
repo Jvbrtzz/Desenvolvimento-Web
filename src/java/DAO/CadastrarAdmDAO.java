@@ -65,4 +65,38 @@ public class CadastrarAdmDAO {
         }
         return lista;
     }
+    public void Excluir(Pessoa objPessoa) throws ClassNotFoundException{
+        
+        String sql = "delete from administradores where id = ?";
+        con = new ConexaoDAO().conexaoDAO();
+        
+        try{
+            pstm = (PreparedStatement) con.prepareStatement(sql);
+            pstm.setString(1, objPessoa.getId());
+            
+            pstm.execute();
+            pstm.close();
+            
+        }catch(SQLException e){
+            
+        }
+    }
+    public ResultSet autenticar(Pessoa objPessoa) throws ClassNotFoundException{
+        
+        String sql = "select * from administradores where nome = ? and senha = ?";
+        con = new ConexaoDAO().conexaoDAO();
+        
+        try{
+            pstm = (PreparedStatement) con.prepareStatement(sql);
+            pstm.setString(1, objPessoa.getNome());
+            pstm.setString(2, objPessoa.getSenha());
+            
+            ResultSet rs = pstm.executeQuery();
+            return rs;
+        }catch(SQLException e){
+            
+     }
+        return rs;
+    
+    }
 }

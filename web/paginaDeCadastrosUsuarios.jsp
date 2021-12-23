@@ -74,6 +74,7 @@
             }
         
         %>
-       
+          <center><a style="margin-bottom: 30px;" href="index.html" class="btn btn-primary">Voltar Pagina inicial</a></center>
+     
     </body>
 </html>

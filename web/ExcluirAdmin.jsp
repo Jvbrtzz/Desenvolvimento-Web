@@ -4,7 +4,7 @@
     Author     : jvbor
 --%>
 
-<%@page import="DAO.CadastrarUsuarioDAO"%>
+<%@page import="DAO.CadastrarAdmDAO"%>
 <%@page import="Aplicacao.Pessoa"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="jquery-3.6.0.min.js.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-        <title>Usuário</title>
+        <title>Administrador</title>
     <header class="container-fluid" style="background-color: blueviolet; padding: 10px" >
         <h1 class="text-center">Banco</h1>
     <body>
@@ -39,7 +39,7 @@
            pessoa.setCpf(request.getParameter("cpf"));
            
            
-           CadastrarUsuarioDAO cdao = new CadastrarUsuarioDAO();
+           CadastrarAdmDAO cdao = new CadastrarAdmDAO();
            cdao.Excluir(pessoa);
             } catch (Exception e) {
                }
@@ -50,8 +50,8 @@
     Excluído!
   </div>
         <div class="card-body">
-    <h5 class="card-title">Usuário excluído do Banco de Dados com sucesso.</h5>
-    <a href="paginaDeCadastrosAdmin.jsp" class="btn btn-primary">Voltar para lista</a>
+    <h5 class="card-title">Administrador excluído do Banco de Dados com sucesso.</h5>
+     <a href="paginaDeCadastrosAdmin.jsp" class="btn btn-primary">Voltar para lista</a>
     
   </div>
   <div class="card-footer text-muted">
