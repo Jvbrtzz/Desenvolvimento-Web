@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="jquery-3.6.0.min.js.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-        <title>JSP Page</title>
+        <title>Login Administrador</title>
     <header class="container-fluid" style="background-color: blueviolet; padding: 10px" >
         <h1 class="text-center">Banco</h1>
     </header>

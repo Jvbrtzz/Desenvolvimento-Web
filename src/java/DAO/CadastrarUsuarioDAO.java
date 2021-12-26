@@ -100,4 +100,21 @@ public class CadastrarUsuarioDAO {
         return rs;
     
     }
+   public void Alterar(Pessoa objPessoa) throws ClassNotFoundException{
+        
+        String sql = "update usuarios set suspenso = ? where id = ?";
+        con = new ConexaoDAO().conexaoDAO();
+        
+        try{
+            pstm = (PreparedStatement) con.prepareStatement(sql);
+            pstm.setString(1, objPessoa.getSuspenso());
+            pstm.setString(2, objPessoa.getId());
+            
+            pstm.execute();
+            pstm.close();
+            
+        }catch(SQLException e){
+            
+        }
+    }
 }

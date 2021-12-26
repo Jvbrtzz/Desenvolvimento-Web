@@ -1,6 +1,6 @@
 <%-- 
-    Document   : frmExcluirUser
-    Created on : 23/12/2021, 11:30:41
+    Document   : frmAlterarUser
+    Created on : 26/12/2021, 10:46:08
     Author     : jvbor
 --%>
 
@@ -17,32 +17,30 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="jquery-3.6.0.min.js.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-        <title>Usuário excluir</title>
+        <title>Administrador Alterar</title>
     <header class="container-fluid" style="background-color: blueviolet; padding: 10px" >
         <h1 class="text-center">Banco</h1>
     </header>
         
     </head>
     <body>
-       <center><h1 style="padding-top: 20px">EXCLUIR USUARIO</h1></center>
-            <form  name= "form1" method="post" action="ExcluirUser.jsp">
+       <center><h1 style="padding-top: 20px">ALTERAR USUARIO</h1></center>
+            <form  name= "form1" method="post" action="alterarUser.jsp">
+                <div class="form-group" >
+                
+                <form  name= "form1" method="post" action="alterarUser.jsp">
                 <div class="form-group" >
                 
                 ID:<br>
                 <input type='text' name='id' class='form-control' value="<%=request.getParameter("id")%>" ><br>    
-                Nome:<br>
-                <input type='text' name='nome' class='form-control'value="<%=request.getParameter("nome")%>" ><br>
-                Senha:<br>
-                <input type='password' name='senha' class='form-control'value="<%=request.getParameter("senha")%>" ><br>
-                CPF:<br>
-                <input type="text" name ='cpf' class="form-control" onkeypress="$(this).mask('000.000.000-00');" value="<%=request.getParameter("cpf")%>" ><br>
               
                 <label for="suspenso">Suspenso:</label>
                     <select name="suspenso" id="valor" value="<%=request.getParameter("suspenso")%>">
                       <option value="S">Suspenso</option>
                       <option value="N">Não Suspenso</option>                      
-                    </select><br><br>
-                    <center><button class="btn btn-danger" type="submit">Excluir</button></center>
+                    </select><br><br>                 
+               
+                    <center><button class="btn btn-danger" type="submit">Alterar</button></center>
             </form>        
     </body>
 </html>

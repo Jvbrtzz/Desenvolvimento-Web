@@ -66,6 +66,16 @@
                            + lista.get(num).getCpf() + "&suspenso=" 
                            + lista.get(num).getSuspenso() + "'> Excuir </a>");
                    out.println("</center>");
+                   
+                    
+                   out.println("<center>");
+                   out.print("<a href='frmAlterarUser.jsp?id="
+                           + lista.get(num).getId() + "&nome="
+                           + lista.get(num).getNome()+ "&senha="
+                           + lista.get(num).getSenha()+ "&cpf="
+                           + lista.get(num).getCpf() + "&suspenso=" 
+                           + lista.get(num).getSuspenso() + "'> Alterar Estado (S/N) </a>");
+                   out.println("</center>");
 
                    %><Br><Br><%
                }

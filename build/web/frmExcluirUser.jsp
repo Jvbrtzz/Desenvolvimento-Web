@@ -25,7 +25,7 @@
     </head>
     <body>
        <center><h1 style="padding-top: 20px">EXCLUIR USUARIO</h1></center>
-            <form  name= "form1" method="post" action="ExcluirUser.jsp" onsubmit="required()">
+            <form  name= "form1" method="post" action="ExcluirUser.jsp">
                 <div class="form-group" >
                 
                 ID:<br>

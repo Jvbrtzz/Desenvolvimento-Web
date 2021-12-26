@@ -34,7 +34,7 @@
            pessoa.setNome(request.getParameter("nome"));
            pessoa.setSenha(request.getParameter("senha"));
            pessoa.setCpf(request.getParameter("cpf"));
-           pessoa.setSuspenso(request.getParameter("suspenso"));
+          
            
            CadastrarAdmDAO cdao = new CadastrarAdmDAO();
            cdao.CadastrarAdm(pessoa);
@@ -64,6 +64,8 @@
                            + lista.get(num).getSenha()+ "&cpf="
                            + lista.get(num).getCpf()  + "'> Excuir </a>");
                    out.println("</center>");
+                   
+                   
 
                    %><Br><Br><%
                
