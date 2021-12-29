@@ -44,7 +44,9 @@
                        out.println("<center>");
                        out.println("<h1>" + "Cadatro número: " + num + "</h1>");
                        out.println("<br>");
-                       out.println("Descrição: " + lista.get(num).getDescricao() +"<br>");
+                       out.println("<Strong>ID:</Strong> " + lista.get(num).getId_categoria()+"<br>");
+                       out.println("<Strong>Descrição:</Strong> " + lista.get(num).getDescricao() +"<br>");
+                       out.println("<br>");
                        out.println("</center>");
             }
                 } catch (Exception e) {

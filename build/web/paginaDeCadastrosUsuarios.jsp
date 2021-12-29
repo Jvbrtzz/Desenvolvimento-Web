@@ -59,7 +59,7 @@
                    out.println("<br>");
                    
                    out.println("<center>");
-                   out.print("<a href='frmExcluirUser.jsp?id="
+                   out.print("<a style='margin-bottom: 20px;' class= 'btn btn-danger' href='frmExcluirUser.jsp?id="
                            + lista.get(num).getId() + "&nome="
                            + lista.get(num).getNome()+ "&senha="
                            + lista.get(num).getSenha()+ "&cpf="
@@ -69,7 +69,7 @@
                    
                     
                    out.println("<center>");
-                   out.print("<a href='frmAlterarUser.jsp?id="
+                   out.print("<a  class= 'btn btn-warning' href='frmAlterarUser.jsp?id="
                            + lista.get(num).getId() + "&nome="
                            + lista.get(num).getNome()+ "&senha="
                            + lista.get(num).getSenha()+ "&cpf="

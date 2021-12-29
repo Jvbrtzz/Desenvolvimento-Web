@@ -50,15 +50,15 @@
                    out.println("<center>");
                    out.println("<h1>" + "Cadatro número: " + num + "</h1>");
                    out.println("<br>");
-                   out.println("ID: " + lista.get(num).getId() +"<br>");
-                   out.println("Nome: " + lista.get(num).getNome() +"<br>");
-                   out.println("Senha: " + lista.get(num).getSenha() +"<br>");
-                   out.println("CPF: " + lista.get(num).getCpf() +"<br>");
+                   out.println("<Strong>ID: </Strong>" + lista.get(num).getId() +"<br>");
+                   out.println("<Strong>Nome: </Strong>" + lista.get(num).getNome() +"<br>");
+                   out.println("<Strong>Senha: </Strong>" + lista.get(num).getSenha() +"<br>");
+                   out.println("<Strong>CPF: </Strong>" + lista.get(num).getCpf() +"<br>");
                    out.println("</center>");
                    out.println("<br>");
                    
                   out.println("<center>");
-                   out.print("<a href='frmExcluirAdmin.jsp?id="
+                   out.print("<a class= 'btn btn-danger' href='frmExcluirAdmin.jsp?id="
                            + lista.get(num).getId() + "&nome="
                            + lista.get(num).getNome()+ "&senha="
                            + lista.get(num).getSenha()+ "&cpf="

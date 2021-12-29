@@ -49,7 +49,7 @@ public class CadastrarCategoriaDAO {
             rs = pstm.executeQuery(sql);
             categoriaLancamento objCat = new categoriaLancamento();
             while(rs.next()){
-                
+                objCat.setId_categoria(rs.getString("id"));
                 objCat.setDescricao(rs.getString("descricao"));
                 
                 
