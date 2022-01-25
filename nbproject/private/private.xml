@@ -12,13 +12,12 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/jvbor/OneDrive/Documentos/NetBeansProjects/WebApp/src/java/DAO/ConexaoDAO.java</file>
             <file>file:/C:/Users/jvbor/OneDrive/Documentos/NetBeansProjects/WebApp/web/paginaDeCadastrosUsuarios.jsp</file>
-            <file>file:/C:/Users/jvbor/OneDrive/Documentos/NetBeansProjects/WebApp/web/usuario.jsp</file>
-            <file>file:/C:/Users/jvbor/OneDrive/Documentos/NetBeansProjects/WebApp/web/alterarUser.jsp</file>
-            <file>file:/C:/Users/jvbor/OneDrive/Documentos/NetBeansProjects/WebApp/web/ExcluirUser.jsp</file>
-            <file>file:/C:/Users/jvbor/OneDrive/Documentos/NetBeansProjects/WebApp/web/frmAlterarUser.jsp</file>
+            <file>file:/C:/Users/jvbor/OneDrive/Documentos/NetBeansProjects/WebApp/web/paginaDeCadastrosCategoria.jsp</file>
+            <file>file:/C:/Users/jvbor/OneDrive/Documentos/NetBeansProjects/WebApp/src/java/DAO/CadastrarCategoriaDAO.java</file>
             <file>file:/C:/Users/jvbor/OneDrive/Documentos/NetBeansProjects/WebApp/src/java/DAO/CadastrarUsuarioDAO.java</file>
+            <file>file:/C:/Users/jvbor/OneDrive/Documentos/NetBeansProjects/WebApp/web/paginaDeCadastrosAdmin.jsp</file>
+            <file>file:/C:/Users/jvbor/OneDrive/Documentos/NetBeansProjects/WebApp/src/java/DAO/CadastrarAdmDAO.java</file>
         </group>
     </open-files>
 </project-private>
