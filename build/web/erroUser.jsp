@@ -1,6 +1,6 @@
 <%-- 
-    Document   : erro
-    Created on : 23/12/2021, 15:40:55
+    Document   : erroUser
+    Created on : 25/01/2022, 16:00:02
     Author     : jvbor
 --%>
 
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="jquery-3.6.0.min.js.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-        <title>Administrador</title>
+        <title>u=Usuário</title>
     <header class="container-fluid" style="background-color: blueviolet; padding: 10px" >
         <h1 class="text-center">Banco</h1>
     <body>
@@ -30,8 +30,8 @@
     Senha ou usuário incorreto!
   </div>
         <div class="card-body">
-    <h5 class="card-title">Tente novamente se realmente for um administrador.</h5>
-     <a href="loginAdm.jsp" class="btn btn-primary">Voltar login</a>
+    <h5 class="card-title">Tente novamente se realmente for um Usuário.</h5>
+     <a href="login.jsp" class="btn btn-primary">Voltar login</a>
      <a href="index.html" class="btn btn-primary">Voltar Pagina inicial</a>
   </div>
                 <div class="card-footer text-muted"></div>

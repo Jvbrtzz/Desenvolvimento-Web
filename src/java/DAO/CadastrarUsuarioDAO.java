@@ -84,7 +84,7 @@ public class CadastrarUsuarioDAO {
     }
    public ResultSet autenticar(Pessoa objPessoa) throws ClassNotFoundException{
         
-        String sql = "select * usuarios where nome = ? and senha = ?";
+        String sql = "select * from usuarios where nome = ? and senha = ?";
         con = new ConexaoDAO().conexaoDAO();
         
         try{
@@ -100,6 +100,7 @@ public class CadastrarUsuarioDAO {
         return rs;
     
     }
+  
    public void Alterar(Pessoa objPessoa) throws ClassNotFoundException{
         
         String sql = "update usuarios set suspenso = ? where id = ?";
