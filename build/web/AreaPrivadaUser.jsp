@@ -90,7 +90,7 @@
     <p class="card-text">Lista de Ações</p>
    
     <a href="contas.jsp" class="btn btn-primary" style="margin-left: 10px" >Cadastrar Conta Corrente</a>
-    <a href="cadastroAdmin.jsp" class="btn btn-primary" style="margin-left: 10px" >Cadastrar Lançamentos</a>
+    <a href="lancamentos.jsp" class="btn btn-primary" style="margin-left: 10px" >Cadastrar Lançamentos</a>
    
   </div></center>
 

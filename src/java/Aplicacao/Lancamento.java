@@ -9,7 +9,7 @@ package Aplicacao;
  *
  * @author jvbor
  */
-public class categoriaLancamento {
+public class Lancamento {
 
     public String getId_conta() {
         return id_conta;
