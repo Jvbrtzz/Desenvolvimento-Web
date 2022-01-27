@@ -41,19 +41,20 @@ public class CadastrarCategoriaDAO {
         }
     }
      public ArrayList<categoriaLancamento> Cadastrados() throws ClassNotFoundException{
+        try {
         String sql = "select * from categorias";
         con = new ConexaoDAO().conexaoDAO();
         
-        try {
+        
             pstm = (PreparedStatement) con.prepareStatement(sql);
             rs = pstm.executeQuery(sql);
-            categoriaLancamento objCat = new categoriaLancamento();
+            
             while(rs.next()){
-                objCat.setId(rs.getString("id"));
-                objCat.setDescricao(rs.getString("descricao"));
+                categoriaLancamento obj = new categoriaLancamento();
+                obj.setId(rs.getString("id"));                
+                obj.setDescricao(rs.getString("descricao"));
                 
-                
-                lista.add(objCat);
+                lista.add(obj);
             }
             
         } catch (Exception e) {
@@ -61,4 +62,5 @@ public class CadastrarCategoriaDAO {
         }
         return lista;
     }
+
 }
