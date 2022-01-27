@@ -86,7 +86,7 @@
       %>
   <center><div class="card text-center" style="width: 30rem; height: 35rem; margin-top: 5%;  border: 10px solid black; border-radius: 20px;">
   <div class="card-body" style="padding: 25%;">
-      <h5 class="card-title" style="font-size: 30px; margin-top: -30px; margin-bottom: 40px; padding-bottom: 10%">Área do Administrador</h5>
+      <h5 class="card-title" style="font-size: 30px; margin-top: -30px; margin-bottom: 40px; padding-bottom: 10%">Área do Usuário</h5>
     <p class="card-text">Lista de Ações</p>
    
     <a href="contas.jsp" class="btn btn-primary" style="margin-left: 10px" >Cadastrar Conta Corrente</a>
