@@ -84,12 +84,12 @@ public class CadastrarUsuarioDAO {
     }
    public ResultSet autenticar(Pessoa objPessoa) throws ClassNotFoundException{
         
-        String sql = "select * from usuarios where nome = ? and senha = ?";
+        String sql = "select * from usuarios where cpf = ? and senha = ?";
         con = new ConexaoDAO().conexaoDAO();
         
         try{
             pstm = (PreparedStatement) con.prepareStatement(sql);
-            pstm.setString(1, objPessoa.getNome());
+            pstm.setString(1, objPessoa.getCpf());
             pstm.setString(2, objPessoa.getSenha());
             
             ResultSet rs = pstm.executeQuery();

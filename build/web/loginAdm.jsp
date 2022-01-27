@@ -26,8 +26,8 @@
             <h1>Login Administrador</h1>
             <form  name= "form1" method="post" action="AreaPrivadaAdm.jsp" onsubmit="">
                 <div class="form-group" >
-                Nome:<br>
-                <input type='text' name='nome' id="nome" class='form-control' ><br>
+                CPF:<br>
+                <input type='text' name='cpf' id="cpf" class='form-control'onkeypress="$(this).mask('000.000.000-00');"><br>
                 Senha:<br>
                 <input type="password" class='form-control' id="senha" name="senha"><br>
                 

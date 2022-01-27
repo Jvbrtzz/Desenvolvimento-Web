@@ -63,9 +63,9 @@
         <%
           try {
                 Pessoa pessoa = new Pessoa();
-                String nome = request.getParameter("nome");
+                String cpf = request.getParameter("cpf");
                 String senha = request.getParameter("senha");
-                pessoa.setNome(nome);
+                pessoa.setCpf(cpf);
                 pessoa.setSenha(senha);
                 
                 CadastrarAdmDAO objPessoa = new CadastrarAdmDAO();
